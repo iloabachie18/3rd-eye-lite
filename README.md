@@ -1,4 +1,4 @@
-# 3RD EYE Lite 👁️
+﻿# 3RD EYE Lite ðŸ‘ï¸
 
 **An AWS security scanner.** 3RD EYE Lite checks an AWS account for the
 misconfigurations attackers look for first, ranks every finding by risk,
@@ -6,9 +6,11 @@ explains how to fix it, and gives the account a security score out of 100.
 
 ![CI](https://github.com/iloabachie18/3rd-eye-lite/actions/workflows/ci.yml/badge.svg)
 
-> This is the open **portfolio edition** of 3RD EYE. The full product,
-> in private development, adds five more checks: root account MFA,
-> root access keys, access-key age, CloudTrail coverage and GuardDuty.
+> This is the open **portfolio edition** of 3RD EYE. The full product, in
+> private development, adds five more checks (root account MFA and keys,
+> access-key age, CloudTrail, GuardDuty) and runs as a cloud service:
+> one-click customer onboarding, daily automatic scans, a customer portal
+> with MFA logins, and email alerts.
 
 ---
 
@@ -22,7 +24,7 @@ explains how to fix it, and gives the account a security score out of 100.
 | 4 | Unencrypted EBS disks, and default encryption switched off | MEDIUM |
 | 5 | Password policy weaker than CIS AWS Foundations guidance | MEDIUM |
 
-Scoring starts at 100: **CRITICAL −25, HIGH −15, MEDIUM −5**, then graded A–F.
+Scoring starts at 100: **CRITICAL âˆ’25, HIGH âˆ’15, MEDIUM âˆ’5**, then graded Aâ€“F.
 
 ## Example report card
 
@@ -103,23 +105,23 @@ python -m pytest -v
 
 ```text
 3rd-eye-lite/
-├── scanner/              # 5 checks + scan.py report card
-├── test/                 # automated tests (pytest + moto)
-├── practice-house/
-│   ├── messy/            # Terraform: planted mistakes
-│   └── clean/            # Terraform: the correct versions
-├── .github/workflows/    # CI pipeline
-├── requirements.txt
-└── requirements-dev.txt
+â”œâ”€â”€ scanner/              # 5 checks + scan.py report card
+â”œâ”€â”€ test/                 # automated tests (pytest + moto)
+â”œâ”€â”€ practice-house/
+â”‚   â”œâ”€â”€ messy/            # Terraform: planted mistakes
+â”‚   â””â”€â”€ clean/            # Terraform: the correct versions
+â”œâ”€â”€ .github/workflows/    # CI pipeline
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ requirements-dev.txt
 ```
 
 ## License
 
-© 2026 Chike Iloabachie. All rights reserved. You're welcome to read and
+Â© 2026 Chike Iloabachie. All rights reserved. You're welcome to read and
 learn from this code; please get in touch before reusing it.
 
 ## Author
 
 **Chike Iloabachie**, Cloud / DevOps Engineer
-AWS · Azure · Kubernetes · Terraform · DevSecOps
+AWS Â· Azure Â· Kubernetes Â· Terraform Â· DevSecOps
 [LinkedIn](https://linkedin.com/in/chikeiloabachie)
